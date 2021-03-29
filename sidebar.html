@@ -1,0 +1,86 @@
+<html>
+
+<style>
+    * {
+        list-style: none;
+        text-decoration: none;
+    }
+    
+    .wrapper {
+        display: flex;
+        position: fixed;
+        margin-top: 90px;
+        text-align: center;
+    }
+    
+    .wrapper .sidebar {
+        width: 260px;
+        height: 75vh;
+        position: fixed;
+        padding: 40px 0;
+        margin-left: 13px;
+        background-color: turquoise;
+        overflow: scroll;
+    }
+    
+    .wrapper .sidebar h5 {
+        color: black;
+        text-align: center;
+        text-transform: uppercase;
+        margin-top: -30px;
+        margin-bottom: 14px;
+        font-size: 23px;
+    }
+    
+    .wrapper .sidebar ul li {
+        padding: 3px;
+        font-size: px;
+        border-bottom: 1px solid rgba(20, 15, 15, 0.05);
+        border-top: 1px solid rgba(12, 11, 11, 0.05);
+        text-align: left;
+    }
+    
+    .wrapper .sidebar ul li a {
+        color: rgb(59, 25, 161);
+        display: block;
+        text-transform: uppercase;
+        margin-left: 30px;
+        transition: 1s;
+        font-size: 15px;
+    }
+    
+    .wrapper .sidebar ul li:hover {
+        background-color: rgba(88, 82, 82, 0.05);
+    }
+    
+    .wrapper .sidebar ul li:hover a {
+        color: rgb(19, 15, 15);
+    }
+</style>
+
+<div class="wrapper">
+    <div class="sidebar" id="d1">
+
+        <h5>INFORMATION</h5>
+
+
+        <ul>
+
+            <!-- <li><a href="information.html">INFORMATION</a></li> -->
+            <li><a href="index.php" target="first">HOME</a></li>
+            <li><a href="information.php" target="second">INFORMATION</a></li>
+            <li><a href="index.php">SERVICES</a></li>
+            <li><a href="index.php">ABOUT US</a></li>
+            <li><a href="index.php">CONTACT US</a></li>
+
+
+        </ul>
+
+
+
+    </div>
+
+
+</div>
+
+</html>
