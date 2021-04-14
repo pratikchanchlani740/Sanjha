@@ -5,11 +5,11 @@
 <frame src="navbar.html"> </frame>
 
 
-<frameset cols="15%,60%,20%"  >
+<frameset cols="15%,60%,20%"  name="fifth"  >
 <!-- name="second" -->
-<frame src="sidebar1.html" > </frame>
+<frame src="sidebar.html" > </frame>
 
-<frame src="information1.php"  name="main" > </frame>
+<frame src="contactus1.html" > </frame>
 <frame src="adarsh.jpg"> </frame>
 
 

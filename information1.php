@@ -15,7 +15,7 @@ if(isset($_GET['code']))
     {
         $query1="SELECT * FROM inform where shop_type LIKE '%Auto Mobile%'"; 
        $search_result=filterTable($query1); 
-       echo "Hello World";
+     
 
     }
     if($code==3)
@@ -115,12 +115,7 @@ if(isset($_GET['code']))
 
     }
 
-    if($code==23)
-    {
-        $query1="SELECT * FROM inform where shop_type LIKE '%SteelWorks%'"; 
-        $search_result=filterTable($query1); 
-
-    }
+    
     if($code==19)
     {
         $query1="SELECT * FROM inform where shop_type LIKE '%Salon%'"; 
@@ -143,8 +138,105 @@ if(isset($_GET['code']))
     {
         $query1="SELECT * FROM inform where shop_type LIKE '%Garage%'"; 
         $search_result=filterTable($query1); 
+    
+    }
+    if($code==23)
+    {
+        $query1="SELECT * FROM inform where shop_type LIKE '%Steel Works%'"; 
+        $search_result=filterTable($query1); 
 
     }
+    if($code==24)
+    {
+        $query1="SELECT * FROM inform where shop_type LIKE '%Bag Shop%'"; 
+        $search_result=filterTable($query1); 
+
+    }
+    if($code==25)
+    {
+        $query1="SELECT * FROM inform where shop_type LIKE '%stationary%'"; 
+        $search_result=filterTable($query1); 
+
+    }
+    if($code==26)
+    {
+        $query1="SELECT * FROM inform where shop_type LIKE '%computer shop%'"; 
+        $search_result=filterTable($query1); 
+
+    }
+    if($code==27)
+    {
+        $query1="SELECT * FROM inform where shop_type LIKE '%gift shop%'"; 
+        $search_result=filterTable($query1); 
+
+    }
+    if($code==28)
+    {
+        $query1="SELECT * FROM inform where shop_type LIKE '%cyber cafe%'"; 
+        $search_result=filterTable($query1); 
+
+    }
+    if($code==29)
+    {
+        $query1="SELECT * FROM inform where shop_type LIKE '%milk dairy%'"; 
+        $search_result=filterTable($query1); 
+
+    }
+    if($code==30)
+    {
+        $query1="SELECT * FROM inform where shop_type LIKE '%disposal%'"; 
+        $search_result=filterTable($query1); 
+
+    }
+    if($code==31)
+    {
+        $query1="SELECT * FROM inform where shop_type LIKE '%event management%'"; 
+        $search_result=filterTable($query1); 
+
+    }
+    if($code==32)
+    {
+        $query1="SELECT * FROM inform where shop_type LIKE '%matching centre%'"; 
+        $search_result=filterTable($query1); 
+
+    }
+    if($code==33)
+    {
+        $query1="SELECT * FROM inform where shop_type LIKE '%enterprises%'"; 
+        $search_result=filterTable($query1); 
+
+    }
+    if($code==34)
+    {
+        $query1="SELECT * FROM inform where shop_type LIKE '%agro material%'"; 
+        $search_result=filterTable($query1); 
+
+    }
+    if($code==35)
+    {
+        $query1="SELECT * FROM inform where shop_type LIKE '%sweet house%'"; 
+        $search_result=filterTable($query1); 
+
+    }
+    if($code==36)
+    {
+        $query1="SELECT * FROM inform where shop_type LIKE '%studio%'"; 
+        $search_result=filterTable($query1); 
+
+    }
+    if($code==37)
+    {
+        $query1="SELECT * FROM inform where shop_type LIKE '%floor meal%'"; 
+        $search_result=filterTable($query1); 
+
+    }
+    if($code==38)
+    {
+        $query1="SELECT * FROM inform where shop_type LIKE '%gas agency%'"; 
+        $search_result=filterTable($query1); 
+
+    }
+    
 
 }
 if(isset($_GET['code'])==false)
@@ -270,7 +362,7 @@ function filterTable($query)
 header{
     width: 100%;
     height: 10vh;
-    background-color: rgb(162, 225, 230);
+    background-color:  rgb(145, 134, 243);;
     position:fixed;
     z-index: 1;
     margin-top: -100px;
@@ -372,10 +464,10 @@ input{
 
 <body>
 <header>
-    <h1>SANJHA.com</h1>
+    <h1 style="font-family:TimesNewRoman">SANJHA</h1>
    <form action="information1.php" method="post">
     <div class="search-box" >
-        <input class="search-txt" type="text" name="box" placeholder="search what u want"  >
+        <input class="search-txt" type="text" name="box" placeholder="search what you want"  >
         <input class="search-btn" name="search" type="submit" >
     </div> 
     </form>
@@ -387,7 +479,7 @@ input{
 </frameset> -->
 <section id="team ">
     <div class="container" style="width:800px;">
-      <div class="row" style="margin-left:60px;">
+      <div class="row" style="margin-left:-200px;">
       <?php
       
       require 'Database.php';
@@ -414,7 +506,7 @@ input{
                 <div class="image" style="margin-bottom:40px; ">
              
                     
-                <img src="<?php  echo $row['image']; ?>" class="img-fliud" alt="" style="width: 65%; height: 28vh;">
+                <img src="<?php  echo $row['image']; ?>" class="img-fliud" alt="" style="width: 120%; height: 28vh;">
                 <!-- style="width: 65%; height: 28vh;" -->
                 <!-- width=100 height=100 -->
                 </div>
@@ -422,7 +514,7 @@ input{
             </div>
            
             <div class="col-lg-4">
-                <div class="info"style="position:absolute; margin-left:320px; margin-top:-220px;" >
+                <div class="info" style="position:absolute; margin-left:120px; margin-top:0px; width:180%;" >
                 <!-- style="position:absolute; margin-left:280px;  width:800px;" -->
               
                     
@@ -441,7 +533,7 @@ input{
                     </h6>
                     
                       <div class="social">
-                          <button class="btn btn-default phone" type="button"><i class="fas fa-phone"></i> Add to phone</button>
+                          <button class="btn btn-default phone" type="button"><i class="fas fa-tags"></i>Show offer</button>
                     
                           <button class="btn btn-default mail" type="button"><i class="fas fa-envelope-square"></i><a href="MailDemo1.php?email= <?php echo $row['email']; ?>"> Send mail</a></button>
                         

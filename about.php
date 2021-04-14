@@ -5,11 +5,11 @@
 <frame src="navbar.html"> </frame>
 
 
-<frameset cols="20%,60%,20%"  name="fourth"  >
+<frameset cols="15%,60%,20%"  name="fourth"  >
 <!-- name="second" -->
 <frame src="sidebar.html" > </frame>
 
-<frame src="about.html" > </frame>
+<frame src="about1.html" > </frame>
 <frame src="adarsh.jpg"> </frame>
 
 

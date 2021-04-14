@@ -1,5 +1,12 @@
 <html>
 
+<head>
+    <script src="https://kit.fontawesome.com/332a215f17.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
 <style>
     * {
         list-style: none;
@@ -7,50 +14,63 @@
     }
     
     .wrapper {
+        margin-left: -10px;
+        width: 230px;
+        height: 120vh;
         display: flex;
         position: fixed;
-        margin-top: 90px;
-        text-align: center;
+        margin-top: -30px;
+        background: rgb(233, 231, 231);
     }
     
     .wrapper .sidebar {
-        width: 260px;
-        height: 75vh;
+        width: 240px;
+        height: 90vh;
         position: fixed;
-        padding: 40px 0;
-        margin-left: 13px;
-        background-color: turquoise;
+        margin-top: 90px;
+        background-color: rgb(145, 134, 243);
         overflow: scroll;
     }
     
-    .wrapper .sidebar h5 {
+    .wrapper h5 {
         color: black;
         text-align: center;
         text-transform: uppercase;
-        margin-top: -30px;
-        margin-bottom: 14px;
-        font-size: 23px;
+        margin-top: 60px;
+        margin-left: 13px;
+        /* position: fixed; */
+        font-size: 26px;
+    }
+    
+    .wrapper .sidebar ul {
+        margin-left: -30px;
     }
     
     .wrapper .sidebar ul li {
         padding: 3px;
-        font-size: px;
+        font-size: 12px;
         border-bottom: 1px solid rgba(20, 15, 15, 0.05);
-        border-top: 1px solid rgba(12, 11, 11, 0.05);
-        text-align: left;
     }
     
     .wrapper .sidebar ul li a {
-        color: rgb(59, 25, 161);
+        color: rgb(247, 246, 250);
         display: block;
         text-transform: uppercase;
-        margin-left: 30px;
+        /* margin-left: 30px; */
         transition: 1s;
         font-size: 15px;
     }
     
+    .wrapper .sidebar ul li a .fas {
+        width: 35px;
+    }
+    
+    .wrapper .sidebar ul li a .fab {
+        width: 35px;
+    }
+    
     .wrapper .sidebar ul li:hover {
-        background-color: rgba(88, 82, 82, 0.05);
+        background-color: rgb(70, 201, 211);
     }
     
     .wrapper .sidebar ul li:hover a {
@@ -59,14 +79,16 @@
 </style>
 
 <div class="wrapper">
+
+    <h5>INFORMATION</h5>
+
     <div class="sidebar" id="d1">
 
-        <h5>INFORMATION</h5>
 
 
         <ul>
 
-            <li> <a href="index.php" target="main"><i class="fas fa-home"></i>HOME</a></li>
+            <li> <a href="index.php" target="first"><i class="fas fa-home"></i>HOME</a></li>
             <li> <a href="information1.php?code=2" target="main"><i class="fas fa-car"></i>AUTO-MOBILES</a></li>
             <li><a href="information1.php?code=3" target="main"><i class="fas fa-shoe-prints"></i>SHOE-SHOP</a></li>
             <li><a href="information1.php?code=4" target="main"><i class="fas fa-satellite"></i>HARDWARE</a></li>
@@ -92,22 +114,22 @@
             <li><a href="information1.php?code=20" target="main"><i class="fas fa-pump-soap"></i>PARLOR</a></li>
             <li><a href="information1.php?code=21" target="main"><i class="fas fa-users"></i>DISTRIBUTOR</a></li>
             <li><a href="information1.php?code=22" target="main"><i class="fas fa-warehouse"></i>GARAGE</a></li>
-            <li><a href="information1.php?code=18" target="main"><i class="fas fa-paperclip"></i>STEEL WORKS</a></li>
-            <li><a href="information1.php?code=18" target="main"><i class="fas fa-shopping-bag"></i>BAG SHOP</a></li>
-            <li><a href="information1.php?code=18" target="main"><i class="fas fa-pen"></i>STATIONARY</a></li>
-            <li><a href="information1.php?code=18" target="main"><i class="fas fa-tv"></i>COMPUTER SHOP</a></li>
-            <li><a href="information1.php?code=18" target="main"><i class="fas fa-gifts"></i>GIFT SHOP</a></li>
-            <li><a href="information1.php?code=18" target="main"><i class="fas fa-laptop"></i>CYBER CAFE</a></li>
-            <li><a href="information1.php?code=18" target="main"><i class="fas fa-wine-bottle"></i>MILK DAIRY</a></li>
-            <li><a href="information1.php?code=18" target="main"><i class="fas fa-glass-whiskey"></i>DISPOSAL</a></li>
-            <li><a href="information1.php?code=18" target="main"><i class="fas fa-calendar-week"></i>EVENT MANAGEMENT</a></li>
-            <li><a href="information1.php?code=18" target="main"><i class="fas fa-glass-whiskey"></i>MATCHING CENTER</a></li>
-            <li><a href="information1.php?code=18" target="main"><i class="fab fa-product-hunt"></i>ENTERPRISES</a></li>
-            <li><a href="information1.php?code=18" target="main"><i class="fas fa-tractor"></i>AGRO MATERIAL</a></li>
-            <li><a href="information1.php?code=18" target="main"><i class="fas fa-cookie"></i>SWEETS HOUSE</a></li>
-            <li><a href="information1.php?code=18" target="main"><i class="fas fa-camera"></i>STUDIO</a></li>
-            <li><a href="information1.php?code=18" target="main"><i class="fab fa-acquisitions-incorporated"></i>FLOOR MEAL</a></li>
-            <li><a href="information1.php?code=18" target="main"><i class="fas fa-gas-pump"></i>GAS AGENCY</a></li>
+            <li><a href="information1.php?code=23" target="main"><i class="fas fa-paperclip"></i>STEEL WORKS</a></li>
+            <li><a href="information1.php?code=24" target="main"><i class="fas fa-shopping-bag"></i>BAG SHOP</a></li>
+            <li><a href="information1.php?code=25" target="main"><i class="fas fa-pen"></i>STATIONARY</a></li>
+            <li><a href="information1.php?code=26" target="main"><i class="fas fa-tv"></i>COMPUTER SHOP</a></li>
+            <li><a href="information1.php?code=27" target="main"><i class="fas fa-gifts"></i>GIFT SHOP</a></li>
+            <li><a href="information1.php?code=28" target="main"><i class="fas fa-laptop"></i>CYBER CAFE</a></li>
+            <li><a href="information1.php?code=29" target="main"><i class="fas fa-wine-bottle"></i>MILK DAIRY</a></li>
+            <li><a href="information1.php?code=30" target="main"><i class="fas fa-glass-whiskey"></i>DISPOSAL</a></li>
+            <li><a href="information1.php?code=31" target="main"><i class="fas fa-calendar-week"></i>EVENT MANAGEMENT</a></li>
+            <li><a href="information1.php?code=32" target="main"><i class="fas fa-user-secret"></i>MATCHING CENTER</a></li>
+            <li><a href="information1.php?code=33" target="main"><i class="fab fa-product-hunt"></i>ENTERPRISES</a></li>
+            <li><a href="information1.php?code=34" target="main"><i class="fas fa-tractor"></i>AGRO MATERIAL</a></li>
+            <li><a href="information1.php?code=35" target="main"><i class="fas fa-cookie"></i>SWEETS HOUSE</a></li>
+            <li><a href="information1.php?code=36" target="main"><i class="fas fa-camera"></i>STUDIO</a></li>
+            <li><a href="information1.php?code=37" target="main"><i class="fab fa-acquisitions-incorporated"></i>FLOOR MEAL</a></li>
+            <li><a href="information1.php?code=38" target="main"><i class="fas fa-gas-pump"></i>GAS AGENCY</a></li>
 
 
         </ul>

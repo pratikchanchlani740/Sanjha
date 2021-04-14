@@ -4,75 +4,78 @@
     * {
         list-style: none;
         text-decoration: none;
+        margin: 0;
+        padding: 0;
     }
     
     .wrapper {
         display: flex;
         position: fixed;
-        margin-top: 90px;
+        /* margin-top: 90px; */
         text-align: center;
     }
     
     .wrapper .sidebar {
-        width: 260px;
-        height: 75vh;
         position: fixed;
-        padding: 40px 0;
-        margin-left: 13px;
-        background-color: turquoise;
-        overflow: scroll;
+        padding: 25vh 20px;
+        width: 33vh;
+        height: 50vh;
+        /* top: 20vh; */
+        background-color: rgb(233, 231, 231);
     }
-    
-    .wrapper .sidebar h5 {
+    /* .wrapper .sidebar h5 {
         color: black;
         text-align: center;
         text-transform: uppercase;
         margin-top: -30px;
         margin-bottom: 14px;
         font-size: 23px;
-    }
+    } */
     
     .wrapper .sidebar ul li {
-        padding: 3px;
-        font-size: px;
-        border-bottom: 1px solid rgba(20, 15, 15, 0.05);
-        border-top: 1px solid rgba(12, 11, 11, 0.05);
-        text-align: left;
+        width: 25vh;
+        margin-left: 100px;
+        padding: 10px 10px 10px 10px;
+        background-color: rgb(145, 134, 243);
+        border-radius: 10px 10px 10px 10px;
+        margin: 0px 0px 40px 0px;
+        transition: .6s;
     }
     
     .wrapper .sidebar ul li a {
-        color: rgb(59, 25, 161);
+        color: rgb(247, 246, 250);
         display: block;
         text-transform: uppercase;
-        margin-left: 30px;
         transition: 1s;
         font-size: 15px;
     }
     
     .wrapper .sidebar ul li:hover {
-        background-color: rgba(88, 82, 82, 0.05);
+        background-color: rgb(70, 201, 211);
     }
     
     .wrapper .sidebar ul li:hover a {
-        color: rgb(19, 15, 15);
+        color: rgb(19, 18, 20);
     }
 </style>
 
 <div class="wrapper">
-    <div class="sidebar" id="d1">
-
-        <h5>INFORMATION</h5>
-
-
+    <div class="sidebar">
         <ul>
 
             <!-- <li><a href="information.html">INFORMATION</a></li> -->
-            <li><a href="index.php" target="first">HOME</a></li>
+            <!-- <li><a href="index.php" target="first">HOME</a></li>
             <li><a href="information.php" target="second">INFORMATION</a></li>
             <li><a href="services.php" target="third">SERVICES</a></li>
             <li><a href="about.php" target="fourth">ABOUT US</a></li>
-            <li><a href="index.php" target="fifth">CONTACT US</a></li>
-
+            <li><a href="contactus.php" target="fifth">CONTACT US</a></li> -->
+            <!-- <li>
+                <a href="">Help</a>
+            </li> -->
+            <li><a href="mymarket.php" target="second">My Market</a></li>
+            <li><a href="customservice.php" target="third">Customer Service</a></li>
+            <li><a href="about.php" target="fourth">About Us</a></li>
+            <li><a href="contactus.php" target="fifth">Contact Us</a></li>
 
         </ul>
 

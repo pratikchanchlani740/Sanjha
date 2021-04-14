@@ -231,7 +231,7 @@ function filterTable($query)
 header{
     width: 100%;
     height: 10vh;
-    background-color: rgb(162, 225, 230);
+    background-color:  rgb(145, 134, 243);;
     position:fixed;
     z-index: 1;
     margin-top: -100px;
@@ -390,7 +390,7 @@ input{
 <body>
     <header>
 
-        <h1>SANJHA.com</h1>
+        <h1 style="font-family:TimesNewRoman">SANJHA</h1>
         <form action="services1.php" method="post">
         <div class="search-box">
             <input class="search-txt" type="text" name="box" placeholder="search what u want">
@@ -413,8 +413,8 @@ input{
     
 
     <section id="team ">
-        <div class="container"> 
-            <div class="row" style="margin-left:40px;">
+        <div class="container" style="width:800px;"> 
+            <div class="row" style="margin-left:-200px;">
             <?php
       
       require 'Database.php';
@@ -447,13 +447,13 @@ input{
                         <div class="col-lg-4  mt-lg-1">
                             <div class="member">
                                 <div class="image" style="margin-bottom:40px; ">
-                                    <img src="<?php  echo $row['image']; ?>" class="img-fliud" alt="" style="width: 65%; height: 28vh;">
+                                    <img src="<?php  echo $row['image']; ?>" class="img-fliud" alt="" style="width: 120%; height: 28vh;">
                                 </div>
                             </div>
                         </div>
 
                         <div class="col-md-8">
-                            <div class="info" style="position:absolute; margin-left:320px; margin-top:-220px; width:800px;">
+                            <div class="info" style="position:absolute; margin-left:120px; margin-top:0px; width:180%;" >
                                 <h4> <?php  echo $row['shop_name']; ?></h4>
                                 <?php  echo $row['pro_name']; ?>
                                 <p> <?php  echo $row['address']; ?></p>
@@ -461,7 +461,7 @@ input{
                                     <?php  echo $row['mobile2']; ?></h6>
                                 <h6> <?php  echo $row['email']; ?></h6>
                                 <div class="social">
-                                    <button class="btn btn-default phone" type="button"><i class="fas fa-phone"></i> Add to phone</button>
+                                    <button class="btn btn-default phone" type="button"><i class="fas fa-tags"></i> Show Offer</button>
 
                                     <button class="btn btn-default mail" type="button"><i class="fas fa-envelope-square"></i>Send mail</button>
 

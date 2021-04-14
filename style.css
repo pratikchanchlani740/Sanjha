@@ -1,0 +1,62 @@
+/*srvices*/
+
+* {
+    width: 100%;
+}
+
+.service {
+    text-align: center;
+    padding: 30px 25px 50px 25px;
+    background-color: rgba(217, 219, 221, 0.9);
+    border-radius: 70px;
+    height: 24vh;
+    width: 28vh;
+}
+
+h2 {
+    color: blue;
+}
+
+p {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.service .container {
+    margin-left: 0px;
+}
+
+.service .icon {
+    margin: 0 auto;
+    width: 75px;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background: white;
+    border-radius: 50px;
+    box-shadow: 1px 2px 15px rgb(19, 104, 173);
+    transition: 1s;
+}
+
+.service .icon i {
+    font-size: 32px;
+    line-height: 1;
+    position: relative;
+    color: rgb(112, 176, 236);
+    transition: ease(0, .3s);
+}
+
+.service .icon:hover {
+    transform: rotate(360deg) translateZ(0);
+}
+
+.service h4 {
+    margin: 12px 0 15px 0;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+
+/* End services and information */

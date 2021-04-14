@@ -1,18 +1,37 @@
 <html>
+    <head>
+        <script src="https://kit.fontawesome.com/332a215f17.js"crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    </head>
 <style>
     * {
         box-sizing: border-box;
         margin: 0;
         padding: 0;
+        /* font-family: sans-serif; */
+        list-style: none;
+        text-decoration: none;
+    }
+    /* @font-face {
+        font-family: myFirstFont;
+        src: url(sansation_light.woff);
     }
     
+    body {
+        font-family: myFirstFont;
+    }
+     */
+    
     #header {
-        height: 85px;
+        height: 80px;
+        /* position: fixed; */
         transition: all 0.5s;
         z-index: 997;
         transition: all 0.5s;
         padding: 10px 0;
-        background: #fff;
+        background: rgb(233, 231, 231);
         box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.3);
     }
     
@@ -24,6 +43,7 @@
     
     #header .logo {
         margin-left: 50px;
+        margin-top: -10px;
     }
     
     #header .logo h1 {
@@ -40,6 +60,8 @@
     #header .logo h1 a:hover {
         color: #00366f;
         text-decoration: none;
+        font-size: large;
+        font-family: sans-serif;
     }
     
     #header .logo img {
@@ -171,6 +193,7 @@
         margin: 0;
         padding: 0;
         list-style: none;
+        /* font-family: sans-serif; */
     }
     
     .mobile-nav a {
@@ -282,35 +305,71 @@
         border-radius: 50px;
         padding: 0 10px;
     }
-</style>
-<header id="header" class="fixed-top">
-    <div class="container">
+     .social-links{
+         position:absolute;
+         margin-left:400px;
+         margin-top:-50px;
 
-        <div class="logo float-left">
-            <!-- Uncomment below if you prefer to use an image logo -->
-            <!-- <h1 class="text-light"><a href="#header"><span>NewBiz</span></a></h1> -->
-            <a href="example.html" class="scrollto"><img src="logo.png" alt="" class="img-fluid" width=100 height=70></a>
-            <h6> Presented By ACPS</h6>
-        </div>
-        <form action="Services1.php" method="post">
+     }
+    .social-links a {
+        font-size: 18px;
+        display: inline-block;
+        background: #067ef7;
+        color: white;
+        line-height: 1;
+        padding: 8px 0;
+        margin-right: 4px;
+        border-radius: 60%;
+        text-align: center;
+        width: 35px;
+        height: 35px;
+        transition: 0.3s;
+    }
+    .social-links a:hover{
+        background: black;
+        color: chartreuse;
+    }
+</style>
+
+<body>
+    <header id="header" class="fixed-top">
+        <div class="container">
+
+            <div class="logo float-left">
+                <!-- Uncomment below if you prefer to use an image logo -->
+                <!-- <h1 class="text-light"><a href="#header"><span>NewBiz</span></a></h1> -->
+                <a href="index.php" target="first" class="scrollto"><img src="logo.png" alt="" class="img-fluid" width=100 height=70></a>
+                <h6> Presented By ACPS</h6>
+            </div>
+
+            <div class="social-links">
+                <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="facebook"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="google-plus"><i class="fab fa-google-plus"></i></a>
+                <a href="#" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+
+            <!-- <form action="Services1.php" method="post">
             <div class="search-box">
                 <input class="search-txt" type="text" name="box" placeholder="search what u want">
                 <input class="search-btn" name="search" type="submit">
             </div>
-        </form>
-        <nav class="main-nav float-right d-none d-lg-block">
-            <ul>
-                <li class="active"><a href="example.html">Home</a></li>
-                <li><a href="#about">About Us</a></li>
-                <!-- <li><a href="#clients">Banner</a></li> -->
+        </form> -->
+            <nav class="main-nav float-right d-none d-lg-block">
+                <ul style="font-family: sans-serif; margin-top: -60px;">
+                    <li class="active"><a href="index.php" target="first">Home</a></li>
+                    <li><a href="about.php" target="fourth">About Us</a></li>
+                    <!-- <li><a href="#clients">Banner</a></li> -->
 
-                <li><a href="#contact">Contact Us</a></li>
-                <li><a href="form.html"><strong>Portal Login</strong></a></li>
-            </ul>
-        </nav>
-        <!-- .main-nav -->
+                    <li><a href="contactus.php" target="fifth">Contact Us</a></li>
+                    <li><a href=""><strong>Portal Login</strong></a></li>
+                </ul>
+            </nav>
+            <!-- .main-nav -->
 
-    </div>
-</header>
+        </div>
+    </header>
+</body>
 
 </html>

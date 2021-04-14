@@ -1,0 +1,370 @@
+<html>
+
+<head>
+    <script src="https://kit.fontawesome.com/332a215f17.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<style>
+    #contact {
+        box-shadow: 0px 0px 12px 0px rgba(2, 1, 1, 0.1);
+        padding-top: 20px;
+        overflow: hidden;
+        /* margin-left: 500px; */
+        border-radius: 20%;
+        width: 200px;
+        text-align: center;
+        margin: 0 0 10px 0;
+        margin-left: 22%;
+    }
+    
+    #contact .section-header {
+        padding-bottom: 0px;
+        margin-top: -20px;
+    }
+    
+    #contact .contact-about h1 {
+        font-size: 36px;
+        margin: 0 0 80px 0;
+        padding: 0;
+        line-height: 1;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 300;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        color: #007bff;
+    }
+    
+    #contact .contact-about p {
+        font-size: 14px;
+        line-height: 24px;
+        font-family: "Montserrat", sans-serif;
+        color: rgb(3, 2, 2);
+    }
+    
+    #contact .social-links {
+        padding-bottom: 20px;
+    }
+    
+    #contact .social-links a {
+        font-size: 18px;
+        display: inline-block;
+        background: #fff;
+        color: #007bff;
+        line-height: 1;
+        padding: 8px 0;
+        margin-right: 4px;
+        border-radius: 50%;
+        text-align: center;
+        width: 36px;
+        height: 36px;
+        transition: 0.3s;
+        border: 1px solid #007bff;
+    }
+    
+    #contact .social-links a:hover {
+        background: #007bff;
+        color: #fff;
+    }
+    
+    #contact .info {
+        color: #283d50;
+    }
+    
+    #contact .info i {
+        font-size: 32px;
+        color: #007bff;
+        float: left;
+        line-height: 1;
+    }
+    
+    #contact .info p {
+        padding: 0 0 10px 36px;
+        line-height: 28px;
+        font-size: 14px;
+    }
+    
+    #contact .form #sendmessage {
+        color: #007bff;
+        border: 1px solid #007bff;
+        display: none;
+        text-align: center;
+        padding: 15px;
+        font-weight: 600;
+        margin-bottom: 15px;
+    }
+    
+    #contact .form #errormessage {
+        color: red;
+        display: none;
+        border: 1px solid red;
+        text-align: center;
+        padding: 15px;
+        font-weight: 600;
+        margin-bottom: 15px;
+    }
+    
+    #contact .form #sendmessage.show,
+    #contact .form #errormessage.show,
+    #contact .form .show {
+        display: block;
+    }
+    
+    #contact .form .validation {
+        color: red;
+        display: none;
+        margin: 0 0 20px;
+        font-weight: 400;
+        font-size: 13px;
+    }
+    
+    #contact .form input,
+    #contact .form textarea {
+        border-radius: 0;
+        box-shadow: none;
+        font-size: 14px;
+    }
+    
+    #contact .form button[type="submit"] {
+        background: #007bff;
+        border: 0;
+        border-radius: 20px;
+        padding: 8px 30px;
+        color: #fff;
+        transition: 0.3s;
+    }
+    
+    #contact .form button[type="submit"]:hover {
+        background: #0067d5;
+        cursor: pointer;
+    }
+    /*--------------------------------------------------------------
+  # Footer
+  --------------------------------------------------------------*/
+    
+    #footer {
+        background: #004;
+        padding: 0 0 20px 0;
+        color: #eee;
+        font-size: 14px;
+    }
+    
+    #footer .footer-top {
+        height: 85vh;
+        background: #996c00;
+        padding: 60px 0 30px 0;
+    }
+    
+    #footer .footer-top .footer-info {
+        margin-bottom: 30px;
+    }
+    
+    #footer .footer-top .footer-info h3 {
+        font-size: 34px;
+        margin: 0 0 20px 0;
+        margin-left: 200px;
+        /* text-align: center; */
+        padding: 2px 0 2px 0;
+        line-height: 1;
+        font-family: "Montserrat", sans-serif;
+        color: #fff;
+        font-weight: 400;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+    }
+    
+    #footer .footer-top .footer-info p {
+        font-size: 13px;
+        line-height: 24px;
+        margin-bottom: 0;
+        font-family: "Montserrat", sans-serif;
+        color: #ecf5ff;
+        /* text-align: center; */
+        margin-left: 60px;
+    }
+    
+    #footer .footer-top .social-links a {
+        font-size: 18px;
+        display: inline-block;
+        background: #007bff;
+        color: #fff;
+        line-height: 1;
+        padding: 8px 0;
+        margin-right: 4px;
+        border-radius: 50%;
+        text-align: center;
+        width: 44px;
+        height: 30px;
+        transition: 0.3s;
+    }
+    
+    #footer .footer-top .social-links a:hover {
+        background: #0067d5;
+        color: #fff;
+    }
+    
+    #footer .footer-top h4 {
+        font-size: 14px;
+        font-weight: bold;
+        color: #fff;
+        text-transform: uppercase;
+        position: relative;
+        padding-bottom: 10px;
+        margin-left: 50px;
+    }
+    
+    #footer .footer-top .footer-links {
+        margin-bottom: 30px;
+    }
+    
+    #footer .footer-top .footer-links ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    
+    #footer .footer-top .footer-links ul li {
+        padding: 8px 0;
+    }
+    
+    #footer .footer-top .footer-links ul li:first-child {
+        padding-top: 0;
+    }
+    
+    #footer .footer-top .footer-links ul a {
+        color: #ecf5ff;
+    }
+    
+    #footer .footer-top .footer-links ul a:hover {
+        color: #74b5fc;
+    }
+    
+    #footer .footer-top .footer-contact {
+        margin-bottom: 30px;
+    }
+    
+    #footer .footer-top .footer-contact p {
+        line-height: 26px;
+        margin-left: 50px;
+    }
+    
+    #footer .footer-top .footer-links ul {
+        line-height: 26px;
+        margin-left: 50px;
+    }
+    
+    #footer .footer-top .footer-newsletter {
+        margin-bottom: 30px;
+    }
+    
+    #footer .footer-top .footer-newsletter input[type="email"] {
+        border: 0;
+        padding: 6px 8px;
+        width: 65%;
+    }
+    
+    #footer .footer-top .footer-newsletter input[type="submit"] {
+        background: #007bff;
+        border: 0;
+        width: 35%;
+        padding: 6px 0;
+        text-align: center;
+        color: #fff;
+        transition: 0.3s;
+        cursor: pointer;
+    }
+    
+    #footer .footer-top .footer-newsletter input[type="submit"]:hover {
+        background: #0062cc;
+    }
+    
+    #footer .copyright {
+        text-align: center;
+        padding-top: 30px;
+    }
+    
+    #footer .credits {
+        text-align: center;
+        font-size: 13px;
+        color: #f1f7ff;
+    }
+    
+    #footer .credits a {
+        color: #bfddfe;
+    }
+    
+    #footer .credits a:hover {
+        color: #f1f7ff;
+    }
+</style>
+<!-- <section id="contact">
+    <div class="container-fluid">
+
+        <div class="section-header">
+            <h1>Contact Us</h1>
+        </div>
+
+    </div>
+</section> -->
+<!-- #contact -->
+
+</main>
+
+<footer id="footer">
+    <div class="footer-top">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-4 col-md-6 footer-info">
+                    <h3>Sanjha Information Provider</h3>
+                    <p>Sanjha introduces a unique Digital project which is dynamic, vibrant, and rapidly expanding channel of distributing the information of services and vendors near you.</p>
+                </div>
+
+
+
+                <div class="col-lg-4 col-md-6 footer-contact" style="margin-top: 100px;margin-left: 60px;">
+
+                    <h4>Designed and Developed By</h4>
+                    <p>BCA Students 2017-2020 <br> </p>
+
+                    <p>
+                        Adarsh College Of Professional Studies
+                        <br>Highway Road, Khadat AbuRoad, India - 307026<br>
+                        <strong>Phone:</strong> (+91) 7734832123 <br>
+                        <strong>Email:</strong> support@sanjha.com<br>
+                    </p>
+
+                    <div class="social-links" style="margin-left: 45px;">
+                        <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="google-plus"><i class="fab fa-google-plus"></i></a>
+                        <a href="#" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+
+                </div>
+
+                <div class="col-lg-4 col-md-6 footer-links" style="margin-left:60vh;margin-top: -47vh;">
+                    <h4>Useful Links</h4>
+                    <ul>
+                        <li><a href="#intro">Home</a></li>
+                        <li><a href="#about">About us</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#">Terms of service</a></li>
+                        <li><a href="#">Privacy policy</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="copyright" style="margin-left: 0%;">
+                © Copyright <strong>  &nbsp; Sanjha Group   </strong> All Rights Reserved
+            </div>
+
+        </div>
+    </div>
+</footer>
+
+</html>
